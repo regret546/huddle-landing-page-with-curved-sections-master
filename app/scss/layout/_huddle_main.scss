@@ -1,0 +1,10 @@
+.huddle__main {
+  min-height: 100vh;
+  display: grid;
+
+  &_header,
+  &_body,
+  &_footer {
+    width: 100%;
+  }
+}

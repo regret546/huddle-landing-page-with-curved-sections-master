@@ -71,6 +71,10 @@ h6 {
   /* Font Family */
   --ff--headings: "Poppins", sans-serif;
   --ff--body: "Open Sans", sans-serif;
+  /* Font Weight */
+  --fw--regular: 400;
+  --fw--bold: 600;
+  --fw--very-bold: 700;
 }
 
 :root {
@@ -85,4 +89,13 @@ h6 {
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.huddle__main {
+  min-height: 100vh;
+  display: grid;
+}
+.huddle__main_header, .huddle__main_body, .huddle__main_footer {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
