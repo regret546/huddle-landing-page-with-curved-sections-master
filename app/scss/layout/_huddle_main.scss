@@ -1,10 +1,13 @@
 .huddle__main {
   min-height: 100vh;
   display: grid;
+  padding: 2rem;
 
   &_header,
   &_body,
   &_footer {
     width: 100%;
+    display: grid;
+    justify-items: center;
   }
 }
