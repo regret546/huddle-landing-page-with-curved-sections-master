@@ -2,9 +2,11 @@
 
 .huddle__main {
   &_header {
+    gap: 2rem;
     &_nav {
       width: 100%;
       display: flex;
+      gap: 2rem;
       justify-content: space-between;
       align-items: center;
 
@@ -29,6 +31,34 @@
     &_info {
       padding: 1rem;
       @include u.grid-horizintally-center;
+
+      button {
+        color: var(--clr--white);
+        background-color: var(--clr--pink);
+        padding: 1rem 3rem;
+        border: none;
+        border-radius: 2rem;
+        font-weight: var(--fw--bold);
+      }
+    }
+
+    &_stats {
+      @include u.grid-horizintally-center;
+      ul {
+        width: 50%;
+        display: grid;
+        margin-bottom: 3rem;
+        img {
+          width: 40px;
+        }
+        h2 {
+          font-size: 5rem;
+          font-weight: var(--fw--very-bold);
+        }
+        p {
+          opacity: 0.7;
+        }
+      }
     }
   }
 }
