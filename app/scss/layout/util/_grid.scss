@@ -4,3 +4,10 @@
   text-align: center;
   gap: 1rem;
 }
+
+@mixin grid-horizintally-left {
+  display: grid;
+  justify-items: left;
+  text-align: left;
+  gap: 1rem;
+}

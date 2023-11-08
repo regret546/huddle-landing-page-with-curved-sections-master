@@ -1,4 +1,9 @@
+@use "../util/" as u;
+
 body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  @include u.grid-horizintally-center;
   ul {
     padding: 0;
     li {
