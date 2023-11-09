@@ -84,7 +84,22 @@
         }
       }
       &_stats {
-        @include u.grid-horizintally-left;
+        .flex-group {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          ul {
+            @include u.grid-horizintally-left;
+            gap: 0;
+
+            h2 {
+              font-family: var(--ff--headings);
+              font-size: 6rem;
+              opacity: 0.8;
+            }
+          }
+        }
       }
     }
   }

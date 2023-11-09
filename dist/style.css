@@ -189,11 +189,22 @@ h6 {
   .huddle__main_header_info p {
     width: 40%;
   }
-  .huddle__main_header_stats {
+  .huddle__main_header_stats .flex-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .huddle__main_header_stats .flex-group ul {
     display: grid;
     justify-items: left;
     text-align: left;
     gap: 1rem;
+    gap: 0;
+  }
+  .huddle__main_header_stats .flex-group ul h2 {
+    font-family: var(--ff--headings);
+    font-size: 6rem;
+    opacity: 0.8;
   }
 }
 
