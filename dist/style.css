@@ -94,6 +94,7 @@ h6 {
   min-height: 100vh;
   max-width: 1440px;
   display: grid;
+  gap: 3rem;
   padding: 2rem;
 }
 @media only screen and (min-width: 992px) {
@@ -105,6 +106,21 @@ h6 {
   width: 100%;
   display: grid;
   justify-items: center;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+body ul {
+  padding: 0;
+}
+body ul li {
+  list-style: none;
 }
 
 .huddle__main_header {
@@ -208,17 +224,17 @@ h6 {
   }
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+.huddle__main_body_content {
   display: grid;
   justify-items: center;
   text-align: center;
   gap: 1rem;
+  gap: 5rem;
 }
-body ul {
-  padding: 0;
+.huddle__main_body_content_grow, .huddle__main_body_content_flow, .huddle__main_body_content_users {
+  display: grid;
+  gap: 1rem;
 }
-body ul li {
-  list-style: none;
+.huddle__main_body_content_grow h2, .huddle__main_body_content_flow h2, .huddle__main_body_content_users h2 {
+  font-weight: var(--fw--very-bold);
 }/*# sourceMappingURL=style.css.map */

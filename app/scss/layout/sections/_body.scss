@@ -1,13 +1,20 @@
 @use "../util/" as u;
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  @include u.grid-horizintally-center;
-  ul {
-    padding: 0;
-    li {
-      list-style: none;
+.huddle__main {
+  &_body {
+    &_content {
+      @include u.grid-horizintally-center;
+      gap: 5rem;
+
+      &_grow,
+      &_flow,
+      &_users {
+        h2 {
+          font-weight: var(--fw--very-bold);
+        }
+        display: grid;
+        gap: 1rem;
+      }
     }
   }
 }
