@@ -35,12 +35,7 @@
       @include u.grid-horizintally-center;
 
       button {
-        color: var(--clr--white);
-        background-color: var(--clr--pink);
-        padding: 1rem 3rem;
-        border: none;
-        border-radius: 2rem;
-        font-weight: var(--fw--bold);
+        @include u.getStarted-btn;
       }
     }
 

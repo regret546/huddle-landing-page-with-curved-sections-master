@@ -161,10 +161,10 @@ body ul li {
 .huddle__main_header_info button {
   color: var(--clr--white);
   background-color: var(--clr--pink);
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
   border: none;
   border-radius: 2rem;
-  font-weight: var(--fw--bold);
+  font-weight: var(--fw--very-bold);
 }
 .huddle__main_header_stats {
   display: grid;
@@ -224,6 +224,9 @@ body ul li {
   }
 }
 
+.huddle__main_body {
+  gap: 5rem;
+}
 .huddle__main_body_content {
   display: grid;
   justify-items: center;
@@ -236,5 +239,25 @@ body ul li {
   gap: 1rem;
 }
 .huddle__main_body_content_grow h2, .huddle__main_body_content_flow h2, .huddle__main_body_content_users h2 {
+  font-family: var(--ff--headings);
+  font-weight: var(--fw--very-bold);
+}
+.huddle__main_body_content_grow img, .huddle__main_body_content_flow img, .huddle__main_body_content_users img {
+  margin-bottom: 3rem;
+}
+.huddle__main_body .get-started {
+  display: grid;
+  gap: 2rem;
+}
+.huddle__main_body .get-started h2 {
+  font-family: var(--ff--headings);
+  font-size: 1.5rem;
+}
+.huddle__main_body .get-started button {
+  color: var(--clr--white);
+  background-color: var(--clr--pink);
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
   font-weight: var(--fw--very-bold);
 }/*# sourceMappingURL=style.css.map */

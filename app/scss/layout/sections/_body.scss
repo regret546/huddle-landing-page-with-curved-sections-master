@@ -2,6 +2,7 @@
 
 .huddle__main {
   &_body {
+    gap: 5rem;
     &_content {
       @include u.grid-horizintally-center;
       gap: 5rem;
@@ -10,10 +11,26 @@
       &_flow,
       &_users {
         h2 {
+          font-family: var(--ff--headings);
           font-weight: var(--fw--very-bold);
+        }
+
+        img {
+          margin-bottom: 3rem;
         }
         display: grid;
         gap: 1rem;
+      }
+    }
+    .get-started {
+      display: grid;
+      gap: 2rem;
+      h2 {
+        font-family: var(--ff--headings);
+        font-size: 1.5rem;
+      }
+      button {
+        @include u.getStarted-btn;
       }
     }
   }

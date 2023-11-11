@@ -1,0 +1,8 @@
+@mixin getStarted-btn {
+  color: var(--clr--white);
+  background-color: var(--clr--pink);
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: var(--fw--very-bold);
+}
