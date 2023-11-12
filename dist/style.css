@@ -260,4 +260,37 @@ body ul li {
   border: none;
   border-radius: 2rem;
   font-weight: var(--fw--very-bold);
+}
+@media only screen and (min-width: 992px) {
+  .huddle__main_body_content {
+    max-width: 1400px;
+  }
+  .huddle__main_body_content_grow, .huddle__main_body_content_flow, .huddle__main_body_content_users {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    text-align: left;
+  }
+  .huddle__main_body_content_grow h2, .huddle__main_body_content_flow h2, .huddle__main_body_content_users h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .huddle__main_body_content_grow img, .huddle__main_body_content_flow img, .huddle__main_body_content_users img {
+    width: 50%;
+  }
+  .huddle__main_body_content_grow div, .huddle__main_body_content_flow div, .huddle__main_body_content_users div {
+    width: 50%;
+  }
+  .huddle__main_body_content_grow div p,
+  .huddle__main_body_content_grow div h2, .huddle__main_body_content_flow div p,
+  .huddle__main_body_content_flow div h2, .huddle__main_body_content_users div p,
+  .huddle__main_body_content_users div h2 {
+    width: 80%;
+  }
+  .huddle__main_body_content_grow {
+    flex-direction: row-reverse;
+  }
+  .huddle__main_body_content_users {
+    flex-direction: row-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */

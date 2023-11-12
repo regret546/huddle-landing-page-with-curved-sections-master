@@ -33,5 +33,42 @@
         @include u.getStarted-btn;
       }
     }
+    @media only screen and (min-width: 992px) {
+      &_content {
+        max-width: 1400px;
+
+        &_grow,
+        &_flow,
+        &_users {
+          display: flex;
+          gap: 2rem;
+          align-items: center;
+          text-align: left;
+
+          h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+          img {
+            width: 50%;
+          }
+          div {
+            width: 50%;
+
+            p,
+            h2 {
+              width: 80%;
+            }
+          }
+        }
+
+        &_grow {
+          flex-direction: row-reverse;
+        }
+        &_users {
+          flex-direction: row-reverse;
+        }
+      }
+    }
   }
 }
