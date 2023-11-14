@@ -90,24 +90,6 @@ h6 {
   --clr--very-pale-blue: hsl(207, 100%, 98%);
 }
 
-.huddle__main {
-  min-height: 100vh;
-  max-width: 1440px;
-  display: grid;
-  gap: 3rem;
-  padding: 2rem;
-}
-@media only screen and (min-width: 992px) {
-  .huddle__main {
-    max-width: 1400px;
-  }
-}
-.huddle__main_header, .huddle__main_body, .huddle__main_footer {
-  width: 100%;
-  display: grid;
-  justify-items: center;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -293,4 +275,31 @@ body ul li {
   .huddle__main_body_content_users {
     flex-direction: row-reverse;
   }
+}
+
+.huddle__main_footer {
+  background: url("../../../../images/bg-footer-top-mobile.svg") no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+}
+
+.huddle__main {
+  min-height: 100vh;
+  display: grid;
+  gap: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  .huddle__main {
+    width: 100%;
+    justify-items: center;
+  }
+}
+.huddle__main_header, .huddle__main_body {
+  width: 100%;
+  max-width: 1400px;
+  display: grid;
+  justify-items: center;
+}
+.huddle__main_header, .huddle__main_body, .huddle__main_footer {
+  padding: 2rem;
 }/*# sourceMappingURL=style.css.map */
