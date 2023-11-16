@@ -277,10 +277,14 @@ body ul li {
   }
 }
 
-.huddle__main_footer {
-  background: url("../../../../images/bg-footer-top-mobile.svg") no-repeat;
-  background-position: top center;
-  background-size: 100% 100%;
+.huddle__main_footer .curve-section img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.huddle__main_footer_content {
+  width: 100%;
+  background-color: var(--clr--very-dark-cyan);
 }
 
 .huddle__main {
@@ -300,6 +304,6 @@ body ul li {
   display: grid;
   justify-items: center;
 }
-.huddle__main_header, .huddle__main_body, .huddle__main_footer {
+.huddle__main_header, .huddle__main_body {
   padding: 2rem;
 }/*# sourceMappingURL=style.css.map */

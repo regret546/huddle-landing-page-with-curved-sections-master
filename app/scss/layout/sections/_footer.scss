@@ -1,7 +1,15 @@
 .huddle__main {
   &_footer {
-    background: url("../../../../images/bg-footer-top-mobile.svg") no-repeat;
-    background-position: top center;
-    background-size: 100% 100%;
+    .curve-section {
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &_content {
+      width: 100%;
+      background-color: var(--clr--very-dark-cyan);
+    }
   }
 }
