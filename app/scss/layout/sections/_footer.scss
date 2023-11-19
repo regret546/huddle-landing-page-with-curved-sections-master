@@ -1,3 +1,5 @@
+@use "../util/" as u;
+
 .huddle__main {
   &_footer {
     .curve-section {
@@ -10,6 +12,36 @@
     &_content {
       width: 100%;
       background-color: var(--clr--very-dark-cyan);
+
+      & > * {
+        padding: 2rem;
+      }
+
+      &_newsletter {
+        display: grid;
+        gap: 1rem;
+        color: var(--clr--white);
+        text-align: left;
+        form {
+          display: grid;
+          gap: 1rem;
+
+          input {
+            display: block;
+            width: 100%;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 0.3rem;
+          }
+          button {
+            @include u.getStarted-btn;
+            padding: 0.8rem;
+            border-radius: 0.3rem;
+            width: 50%;
+            margin-left: auto;
+          }
+        }
+      }
     }
   }
 }

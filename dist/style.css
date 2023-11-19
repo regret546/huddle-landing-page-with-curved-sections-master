@@ -286,6 +286,38 @@ body ul li {
   width: 100%;
   background-color: var(--clr--very-dark-cyan);
 }
+.huddle__main_footer_content > * {
+  padding: 2rem;
+}
+.huddle__main_footer_content_newsletter {
+  display: grid;
+  gap: 1rem;
+  color: var(--clr--white);
+  text-align: left;
+}
+.huddle__main_footer_content_newsletter form {
+  display: grid;
+  gap: 1rem;
+}
+.huddle__main_footer_content_newsletter form input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+}
+.huddle__main_footer_content_newsletter form button {
+  color: var(--clr--white);
+  background-color: var(--clr--pink);
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: var(--fw--very-bold);
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  width: 50%;
+  margin-left: auto;
+}
 
 .huddle__main {
   min-height: 100vh;
