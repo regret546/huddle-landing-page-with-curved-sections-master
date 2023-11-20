@@ -318,6 +318,25 @@ body ul li {
   width: 50%;
   margin-left: auto;
 }
+.huddle__main_footer_content_contacts {
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+  color: var(--clr--white);
+}
+.huddle__main_footer_content_contacts .logo-footer {
+  height: 30px;
+}
+.huddle__main_footer_content_contacts .flex-group div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.huddle__main_footer_content_contacts .flex-group div img {
+  width: 20px;
+  height: 20px;
+}
 
 .huddle__main {
   min-height: 100vh;

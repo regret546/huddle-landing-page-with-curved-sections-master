@@ -42,6 +42,31 @@
           }
         }
       }
+
+      &_contacts {
+        display: grid;
+        gap: 1rem;
+        text-align: left;
+        color: var(--clr--white);
+
+        .logo-footer {
+          height: 30px;
+        }
+
+        .flex-group {
+          div {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
     }
   }
 }
