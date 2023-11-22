@@ -337,6 +337,25 @@ body ul li {
   width: 20px;
   height: 20px;
 }
+.huddle__main_footer .social-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.huddle__main_footer .social-media a {
+  text-decoration: none;
+}
+.huddle__main_footer .social-media a i {
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--clr--white);
+  height: 38px;
+  width: 38px;
+}
+.huddle__main_footer footer {
+  background-color: var(--clr--very-dark-cyan);
+}
 
 .huddle__main {
   min-height: 100vh;

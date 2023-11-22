@@ -68,5 +68,27 @@
         }
       }
     }
+
+    .social-media {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+
+      a {
+        text-decoration: none;
+        i {
+          text-decoration: none;
+          font-size: 36px;
+          color: var(--clr--white);
+          height: 38px;
+          width: 38px;
+        }
+      }
+    }
+
+    footer {
+      background-color: var(--clr--very-dark-cyan);
+    }
   }
 }
