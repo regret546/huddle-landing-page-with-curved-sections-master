@@ -19,12 +19,15 @@
 
       &_newsletter {
         display: grid;
+        justify-items: end;
         gap: 1rem;
         color: var(--clr--white);
         text-align: left;
         form {
           display: grid;
           gap: 1rem;
+          width: 100%;
+          max-width: 500px;
 
           input {
             display: block;
@@ -88,7 +91,18 @@
     }
 
     footer {
+      width: 100%;
       background-color: var(--clr--very-dark-cyan);
+    }
+
+    @media only screen and (min-width: 992px) {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+
+      > * {
+        max-width: 1400px;
+      }
     }
   }
 }

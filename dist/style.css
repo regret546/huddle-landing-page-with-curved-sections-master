@@ -291,6 +291,7 @@ body ul li {
 }
 .huddle__main_footer_content_newsletter {
   display: grid;
+  justify-items: end;
   gap: 1rem;
   color: var(--clr--white);
   text-align: left;
@@ -298,6 +299,8 @@ body ul li {
 .huddle__main_footer_content_newsletter form {
   display: grid;
   gap: 1rem;
+  width: 100%;
+  max-width: 500px;
 }
 .huddle__main_footer_content_newsletter form input {
   display: block;
@@ -354,7 +357,18 @@ body ul li {
   width: 38px;
 }
 .huddle__main_footer footer {
+  width: 100%;
   background-color: var(--clr--very-dark-cyan);
+}
+@media only screen and (min-width: 992px) {
+  .huddle__main_footer {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+  .huddle__main_footer > * {
+    max-width: 1400px;
+  }
 }
 
 .huddle__main {
