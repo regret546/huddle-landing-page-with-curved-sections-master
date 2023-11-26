@@ -366,8 +366,18 @@ body ul li {
     display: grid;
     justify-items: center;
   }
-  .huddle__main_footer > * {
-    max-width: 1400px;
+  .huddle__main_footer .curve-section {
+    width: 100%;
+  }
+  .huddle__main_footer_content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+  .huddle__main_footer_content article {
+    padding: 2rem;
+    max-width: 700px;
   }
 }
 
