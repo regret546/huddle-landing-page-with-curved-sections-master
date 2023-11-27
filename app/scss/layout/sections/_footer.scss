@@ -29,6 +29,11 @@
           width: 100%;
           max-width: 500px;
 
+          input,
+          button {
+            max-height: 50px;
+          }
+
           input {
             display: block;
             width: 100%;
@@ -112,6 +117,25 @@
         article {
           padding: 2rem;
           max-width: 700px;
+        }
+
+        &_newsletter {
+          justify-items: start;
+          form {
+            max-width: 100%;
+            display: flex;
+          }
+        }
+
+        &_contacts {
+          display: grid;
+          gap: 1rem;
+          p {
+            width: 50%;
+          }
+          .flex-group {
+            margin-bottom: 2rem;
+          }
         }
       }
     }

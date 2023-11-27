@@ -147,6 +147,7 @@ body ul li {
   border: none;
   border-radius: 2rem;
   font-weight: var(--fw--very-bold);
+  max-height: 50px;
 }
 .huddle__main_header_stats {
   display: grid;
@@ -242,6 +243,7 @@ body ul li {
   border: none;
   border-radius: 2rem;
   font-weight: var(--fw--very-bold);
+  max-height: 50px;
 }
 @media only screen and (min-width: 992px) {
   .huddle__main_body_content {
@@ -302,6 +304,10 @@ body ul li {
   width: 100%;
   max-width: 500px;
 }
+.huddle__main_footer_content_newsletter form input,
+.huddle__main_footer_content_newsletter form button {
+  max-height: 50px;
+}
 .huddle__main_footer_content_newsletter form input {
   display: block;
   width: 100%;
@@ -316,6 +322,7 @@ body ul li {
   border: none;
   border-radius: 2rem;
   font-weight: var(--fw--very-bold);
+  max-height: 50px;
   padding: 0.8rem;
   border-radius: 0.3rem;
   width: 50%;
@@ -378,6 +385,23 @@ body ul li {
   .huddle__main_footer_content article {
     padding: 2rem;
     max-width: 700px;
+  }
+  .huddle__main_footer_content_newsletter {
+    justify-items: start;
+  }
+  .huddle__main_footer_content_newsletter form {
+    max-width: 100%;
+    display: flex;
+  }
+  .huddle__main_footer_content_contacts {
+    display: grid;
+    gap: 1rem;
+  }
+  .huddle__main_footer_content_contacts p {
+    width: 50%;
+  }
+  .huddle__main_footer_content_contacts .flex-group {
+    margin-bottom: 2rem;
   }
 }
 
