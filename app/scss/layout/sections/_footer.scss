@@ -10,6 +10,8 @@
       }
     }
     &_content {
+      display: grid;
+      padding-top: 5rem;
       width: 100%;
       background-color: var(--clr--very-dark-cyan);
 
@@ -19,7 +21,7 @@
 
       &_newsletter {
         display: grid;
-        justify-items: end;
+        justify-items: start;
         gap: 1rem;
         color: var(--clr--white);
         text-align: left;
@@ -69,8 +71,8 @@
             margin-bottom: 1rem;
 
             img {
-              width: 20px;
-              height: 20px;
+              width: 30px;
+              height: 27px;
             }
           }
         }
@@ -82,15 +84,21 @@
       justify-content: flex-start;
       align-items: center;
       gap: 1rem;
+      margin-top: 1rem;
 
       a {
         text-decoration: none;
         i {
+          cursor: pointer;
           text-decoration: none;
           font-size: 36px;
           color: var(--clr--white);
           height: 38px;
           width: 38px;
+
+          &:hover {
+            color: var(--clr--neon-blue);
+          }
         }
       }
     }
@@ -120,7 +128,16 @@
         }
 
         &_newsletter {
+          max-height: 250px;
           justify-items: start;
+
+          h3 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            width: 50%;
+          }
           form {
             max-width: 100%;
             display: flex;

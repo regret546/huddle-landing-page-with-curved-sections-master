@@ -88,6 +88,8 @@ h6 {
   /* Neutral Colors */
   --clr--very-dark-cyan: hsl(192, 100%, 9%);
   --clr--very-pale-blue: hsl(207, 100%, 98%);
+  /* Button Color */
+  --clr--neon-blue: hsl(189, 100%, 51%);
 }
 
 body {
@@ -147,7 +149,9 @@ body ul li {
   border: none;
   border-radius: 2rem;
   font-weight: var(--fw--very-bold);
-  max-height: 50px;
+}
+.huddle__main_header_info button:hover {
+  opacity: 0.7;
 }
 .huddle__main_header_stats {
   display: grid;
@@ -243,7 +247,9 @@ body ul li {
   border: none;
   border-radius: 2rem;
   font-weight: var(--fw--very-bold);
-  max-height: 50px;
+}
+.huddle__main_body .get-started button:hover {
+  opacity: 0.7;
 }
 @media only screen and (min-width: 992px) {
   .huddle__main_body_content {
@@ -285,6 +291,8 @@ body ul li {
   height: auto;
 }
 .huddle__main_footer_content {
+  display: grid;
+  padding-top: 5rem;
   width: 100%;
   background-color: var(--clr--very-dark-cyan);
 }
@@ -293,7 +301,7 @@ body ul li {
 }
 .huddle__main_footer_content_newsletter {
   display: grid;
-  justify-items: end;
+  justify-items: start;
   gap: 1rem;
   color: var(--clr--white);
   text-align: left;
@@ -322,11 +330,13 @@ body ul li {
   border: none;
   border-radius: 2rem;
   font-weight: var(--fw--very-bold);
-  max-height: 50px;
   padding: 0.8rem;
   border-radius: 0.3rem;
   width: 50%;
   margin-left: auto;
+}
+.huddle__main_footer_content_newsletter form button:hover {
+  opacity: 0.7;
 }
 .huddle__main_footer_content_contacts {
   display: grid;
@@ -344,24 +354,29 @@ body ul li {
   margin-bottom: 1rem;
 }
 .huddle__main_footer_content_contacts .flex-group div img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 27px;
 }
 .huddle__main_footer .social-media {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 .huddle__main_footer .social-media a {
   text-decoration: none;
 }
 .huddle__main_footer .social-media a i {
+  cursor: pointer;
   text-decoration: none;
   font-size: 36px;
   color: var(--clr--white);
   height: 38px;
   width: 38px;
+}
+.huddle__main_footer .social-media a i:hover {
+  color: var(--clr--neon-blue);
 }
 .huddle__main_footer footer {
   width: 100%;
@@ -387,7 +402,14 @@ body ul li {
     max-width: 700px;
   }
   .huddle__main_footer_content_newsletter {
+    max-height: 250px;
     justify-items: start;
+  }
+  .huddle__main_footer_content_newsletter h3 {
+    font-size: 1.5rem;
+  }
+  .huddle__main_footer_content_newsletter p {
+    width: 50%;
   }
   .huddle__main_footer_content_newsletter form {
     max-width: 100%;
